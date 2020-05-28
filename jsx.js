@@ -252,6 +252,7 @@ function custom(time, name) {
 	var newPostKey = firebase.database().ref().child('messageDb').push().key;
 	refreshServerTime();
 	var xdb = $("#message").val();
+	$("#message").val("");
 	firebase.database().ref('messageDb/' + serverTime).set({
 		postKey: newPostKey,
 		priority: 0 - Date.now(),
