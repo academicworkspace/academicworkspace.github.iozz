@@ -236,6 +236,47 @@ function custom(time, name) {
 	
 }
 
+
+
+
+
+//emojis
+
+
+function wow(){
+	
+	custom(serverTime, chatUser);
+	
+
+function custom(time, name, newMsg) {
+	var newPostKey = firebase.database().ref().child('messageDb').push().key;
+	refreshServerTime();
+	firebase.database().ref('messageDb/' + serverTime).set({
+		postKey: newPostKey,
+		priority: 0 - Date.now(),
+		username: name,
+		message: "  + newMsg +  "<div class="emoji  emoji--wow"> <div class="emoji__face"> <div class="emoji__eyebrows"></div> <div class="emoji__eyes"></div> <div class="emoji__mouth"></div> </div> </div>"
+	});
+	
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//emojis
+
+
+
 /* add Message Function */
 function addMsg(time, name, newMsg) {
 	var newPostKey = firebase.database().ref().child('messageDb').push().key;
