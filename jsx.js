@@ -255,7 +255,7 @@ function custom(time, name, newMsg) {
 		postKey: newPostKey,
 		priority: 0 - Date.now(),
 		username: name,
-		message: newMsg +  "<div class="emoji  emoji--wow"> <div class="emoji__face"> <div class="emoji__eyebrows"></div> <div class="emoji__eyes"></div> <div class="emoji__mouth"></div> </div> </div>"
+		message: "<div class="emoji  emoji--wow"> <div class="emoji__face"> <div class="emoji__eyebrows"></div> <div class="emoji__eyes"></div> <div class="emoji__mouth"></div> </div> </div>"
 	});
 	
 	}
