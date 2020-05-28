@@ -92,8 +92,14 @@ section {
 }
 
 .buttony {
-    width:16%;  
+    width:12%; 
+    color:black;
 }
+
+.buttony:hover {
+    background-color: #9B870C;
+}
+
 
 
 
