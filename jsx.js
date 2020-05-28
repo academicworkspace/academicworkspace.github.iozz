@@ -136,7 +136,7 @@ $(document).ready(function() {
 /****************************/
 var firebaseRef = firebase.database().ref().child("messageDb");
 var didPost;
-var maxPosts = 8;
+var maxPosts = 80000;
 var serverTime;
 /* Retrieve Server Time */
 // Problem: Might be Client Time, Servertime is recommended.
@@ -248,14 +248,15 @@ function wow(){
 	custom(serverTime, chatUser);
 	
 
-function custom(time, name, msg) {
+function custom(time, name) {
 	var newPostKey = firebase.database().ref().child('messageDb').push().key;
 	refreshServerTime();
+	var xdb = $("#message").val();
 	firebase.database().ref('messageDb/' + serverTime).set({
 		postKey: newPostKey,
 		priority: 0 - Date.now(),
 		username: name,
-		message: msg + '<div class="emoji  emoji--wow"> <div class="emoji__face"> <div class="emoji__eyebrows"></div> <div class="emoji__eyes"></div> <div class="emoji__mouth"></div> </div> </div>'
+		message: xdb + '<div class="emoji  emoji--wow"> <div class="emoji__face"> <div class="emoji__eyebrows"></div> <div class="emoji__eyes"></div> <div class="emoji__mouth"></div> </div> </div>'
 	});
 	
 	}
