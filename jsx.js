@@ -1,18 +1,4 @@
-// Credits & Info
-// Code by Yasser 01.01.2018
-// Inspired by my friend, Azaan
 
-/* 
-                  updates:
-                  
-                        02.08.2018    -optimized for mobile phones
-                                      -wordbreak in chat 
-                                      -switch input fields with enter
-                        
-                        03.05.2018    -added timestamp to chat
-                                      -improved chat layout            
- 
-*/
 var username;
 var chatUser;
 $(document).ready(function() {
@@ -97,7 +83,7 @@ $(document).ready(function() {
 		$('#imgSection').show();
 		$('#logoutBtn').show();
 		$('.buttonx').show();
-		$('#headerTitle').text("Y A S S E R S  CHAT");
+		$('#headerTitle').text("HACKERS REPUBLIC");
 		$('#navUsername').text(username);
 		$('.page-content').html("<h1>Welcome!!</h1><br /><br />");
 		chatUser = username;
