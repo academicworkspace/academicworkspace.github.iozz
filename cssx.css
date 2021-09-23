@@ -139,7 +139,7 @@ body :-ms-input-placeholder {
     color: white;
 }
 
-.wrapper {
+.wrapper2{
     background: #50a3a2;
     background: -webkit-linear-gradient(top left, #d2d2d2 0%, #000000 100%);
     background: -moz-linear-gradient(top left, #d2d2d2 0%, #000000 100%);
@@ -154,7 +154,7 @@ body :-ms-input-placeholder {
     overflow: hidden;
 }
 
-.wrapper.form-success .container h1 {
+.wrapper2.form-success .container h1 {
     transform: translateY(85px);
 }
 
