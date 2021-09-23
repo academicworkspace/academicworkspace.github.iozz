@@ -76,8 +76,8 @@ $(document).ready(function() {
 
 	function loggedin() {
 		// Hide  Buttons
-
-		$('.wrapper').hide();
+		$('.app').show();
+		$('.wrapper2').hide();
 		$('#signup').hide();
 		$('#login').hide();
 		// Show Logout Button
@@ -101,6 +101,7 @@ $(document).ready(function() {
 		// Hide Logout Button
 		$('#logoutBtn').hide();
 		// Hide Chat
+			$('.app').hide();
 		$("#chatDiv").hide();
 		$('#headerTitle').text("Home");
 		$('#navUsername').empty();
