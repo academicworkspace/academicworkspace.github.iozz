@@ -76,6 +76,7 @@ $(document).ready(function() {
 
 	function loggedin() {
 		// Hide  Buttons
+				$('.app').show();
 		$('.wrapper').hide();
 		$('#signup').hide();
 		$('#login').hide();
@@ -94,7 +95,7 @@ $(document).ready(function() {
 
 	function loggedout() {
 		// show Buttons
-		$('.app').show();
+		$('.app').hide();
 		$('#signupBtn').show();
 		$('#loginBtn').show();
 		// Hide Logout Button
