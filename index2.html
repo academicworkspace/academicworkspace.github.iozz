@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <title></title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style2.css">
+       <meta charset="UTF-8">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style2.css">
+    <title>AW 3.0 Support Site</title>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="init-firebase.js"></script>
+    <script src="jsx.js"></script>
+    <link href="cssx.css" rel="stylesheet">
 
 </head>
 <body>
+  <div id="page-wrap">
+    
+    <div class="wrapper">
+        
+        <div class="container">
+            
+            <p style="font-size:40px;">Login</p>
+            
+            <div class="menu">
+                <input id="loginUser" pattern="[A-Z,a-z,0-9,.,-]*" placeholder="Username" type="text"> 
+                <input id="loginPassword" pattern="[A-Z,a-z,0-9,.,-]*" placeholder="Password" type="password"> 
+                <button id="login" style="width: 138px;">Log In</button> 
+                <button id="signup" style="width: 138px;">Sign Up</button> 
+                <p><span class="errorMessage"></span></p>   
+            </div>
+            
+        </div>
+        
+        
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+   
+    
+
+    
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
 <!-- partial:index.partial.html -->
 <div class="dark-light">
     <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
