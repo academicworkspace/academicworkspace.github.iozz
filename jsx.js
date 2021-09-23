@@ -94,6 +94,7 @@ $(document).ready(function() {
 
 	function loggedout() {
 		// show Buttons
+		$('.app').show);
 		$('#signupBtn').show();
 		$('#loginBtn').show();
 		// Hide Logout Button
