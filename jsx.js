@@ -6,7 +6,7 @@ $(document).ready(function() {
 	var signupdialog = document.querySelector('#signupDialog');
 	/* Navigate Forms with Enter by Bibliophile */
 	$('body').on('keydown', 'input, select, textarea', function(e) {
-		var self = $(this),
+		var self = $(this), 
 			dialog = self.parents('dialog:eq(0)'),
 			focusable, next;
 		if (e.keyCode == 13) {
