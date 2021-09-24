@@ -173,14 +173,14 @@ body :-ms-input-placeholder {
 }
 
 
-.menu {
+.menu1 {
     padding: 20px 0;
     position: relative;
     z-index: 2;
 }
 
 
-.menu input {
+.menu1 input {
     appearance: none;
     outline: 0;
     border: 0;
@@ -194,17 +194,17 @@ body :-ms-input-placeholder {
     transition-duration: 0.25s;
 }
 
-.menu input:hover {
+.menu1 input:hover {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-.menu input:focus {
+.menu1 input:focus {
     background-color: white;
     width: 300px;
     color: black;
 }
 
-.menu button {
+.menu1 button {
     appearance: none;
     outline: 0;
     background-color: white;
@@ -218,7 +218,7 @@ body :-ms-input-placeholder {
     transition-duration: 0.25s;
 }
 
-.menu button:hover {
+.menu1 button:hover {
     background-color: #f5f7f9;
 }
 
