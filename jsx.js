@@ -354,7 +354,7 @@ function loadChat() {
 			}
 			var getPostMessage = child.val().message;
 			var getPostUsername = child.val().username;
-			$("#list").append("<section style="color:white" class="app-card"><span><b>"+ getPostUsername +"<br/>"+ tVal + tDescr + " ago </span><span></b></span><p>" + getPostMessage + "</p></section>");
+			$("#list").append("<section style="color:white" class="app-card"><span><b>" + tVal + tDescr + " ago </span><span>By: " + getPostUsername + ":</b></span><p>" + getPostMessage + "</p></section>");
 			didPost++;
 		});
 		didPost++;
