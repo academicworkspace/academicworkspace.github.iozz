@@ -125,7 +125,7 @@ $(document).ready(function() {
 /****************************/
 var firebaseRef = firebase.database().ref().child("messageDb");
 var didPost;
-var maxPosts = 80000;
+var maxPosts = 5;
 var serverTime;
 /* Retrieve Server Time */
 // Problem: Might be Client Time, Servertime is recommended.
