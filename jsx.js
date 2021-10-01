@@ -283,15 +283,7 @@ function addMsg(time, name, newMsg) {
 
 
 
-/* Show More results */
-function showMoreResults() {
-	maxPosts += 100000000;
-	$("#showMore").hide();
-	loadChat();
-	
-}
 
-setInterval(showMoreResults, 1000);
 
 /* Retrieve List / Data */
 function loadChat() {
