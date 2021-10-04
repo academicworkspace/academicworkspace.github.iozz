@@ -1,4 +1,4 @@
-setInterval(loadChat(),1000); //fix timer issues
+
 
 
 var username;
@@ -282,11 +282,6 @@ function addMsg(time, name, newMsg) {
 	});
 }
 
-
-function showMoreResults() {
-	maxPosts += 5;
-	loadChat();
-}
 
 
 
