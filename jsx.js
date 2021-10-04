@@ -282,7 +282,12 @@ function addMsg(time, name, newMsg) {
 	});
 }
 
+/* Show More results */
+function showMoreResults() {
+	maxPosts += 5;
+	loadChat();
 
+}
 
 
 /* Retrieve List / Data */
