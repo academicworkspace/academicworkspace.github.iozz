@@ -1,6 +1,5 @@
 
 
-
 var username;
 var chatUser;
 $(document).ready(function() {
@@ -290,6 +289,8 @@ function showMoreResults() {
 }
 
 
+setInterval(refreshServerTime(), 1000);
+ 
 /* Retrieve List / Data */
 function loadChat() {
 	var getMessageKey = firebase.database().ref('messageDb/').orderByChild("priority").limitToFirst(maxPosts);
