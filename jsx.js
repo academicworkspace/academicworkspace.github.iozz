@@ -289,7 +289,7 @@ function showMoreResults() {
 }
 
 
-setInterval(refreshServerTime(), 1000);
+setInterval(function a(){maxPosts += 0;loadChat();}, 1000);
  
 /* Retrieve List / Data */
 function loadChat() {
