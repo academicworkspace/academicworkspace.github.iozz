@@ -160,7 +160,7 @@ function submitMessage() {
 
 
 
-function redirect(){
+function url(){
 	
 	var xyz = prompt("Enter Universal Resource Locator for Redirection");	
 	
@@ -288,6 +288,17 @@ function showMoreResults() {
 
 }
 
+function showAll() {
+	maxPosts += 100;
+	loadChat();
+
+}
+
+function hideAll() {
+	maxPosts -= maxPosts;
+	loadChat();
+
+}
 
 setInterval(function a(){maxPosts += 0;loadChat();}, 1000);
  
