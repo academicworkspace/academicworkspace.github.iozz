@@ -2,6 +2,7 @@
 	if(x == "zaqmlpp"){}
         else if(x == "a"){
 username = "123";
+loggedin();
 }
 
 	else {
