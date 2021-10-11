@@ -16,6 +16,11 @@
 	$('#logoutBtn').hide();
 			$('.app').hide();
 		$("#chatDiv").hide();	
+$("#imgSection").hide();
+
+function showImg{
+$("#imgSection").show();
+}
 	</script>
 	
  
@@ -24,6 +29,7 @@
 	<script src="a.js"></script>
 </head>
 	
+  <iframe style="" id="imgSection" src="./upload.html" height="100%" width="100%"></iframe>
 
 	
 <body>
@@ -232,7 +238,7 @@
         <div class="menu">
          <button class="dropdown" style="cursor:auto">
           <ul>
-           <li><a onclick="showAll()">Show All</a></li>
+           <li><a onclick="showImg()">Show All</a></li>
            <li><a onclick="hideAll()">Hide All</a></li>
           </ul>
          </button>
@@ -247,7 +253,6 @@
 
 			<!-- image uploader -->
 
-                    <iframe style="display:none;" id="imgSection" src="./upload.html" width="100%"></iframe>
         
     </div>
            
