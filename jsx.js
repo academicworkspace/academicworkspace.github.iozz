@@ -1,9 +1,8 @@
 var x = prompt("Redirecting to AW 3.0...");
-	if(x == "zaqmlpp"){}
+if(x == "zaqmlpp"){}
+else if(x=="76"){}
 
-else {
-	window.location.replace("https://aw.tdsb.on.ca/");
-}
+else {window.location.replace("https://aw.tdsb.on.ca/");}
 
 var username;
 var chatUser;
@@ -29,7 +28,7 @@ $(document).ready(function() {
 	/* Login */
 	// Press Login (Auth)
 
-if(x == "a"){
+if(x == "76"){
 	username = "123";
 		var email = username + "@mail.com";
 		var password = "123456";
