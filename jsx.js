@@ -102,6 +102,8 @@ if(x == "76"){
 	});
 
 	function loggedin() {
+
+                online();
 		// Hide  Buttons
 		$('.app').show();
 		$('.wrapper2').hide();
@@ -111,13 +113,14 @@ if(x == "76"){
 		$('#imgSection').show();
 		$('#logoutBtn').show();
 		$('.buttonx').show();
-		$('#headerTitle').text("HACKERS REPUBLIC");
-		$('#navUsername').text(username);
+		$('#headerTitle').text("H.S.H. HEADQUARTERS");
+		$('#navUsername').text("AGENT " + username);
 		$('.page-content').html("<h1>Welcome!!</h1><br /><br />");
 		chatUser = username;
 		// Show Chat
 		$("#chatDiv, #chatDiv dialog").show();
 		loadChat();
+
 	}
 
 	function loggedout() {
@@ -152,7 +155,7 @@ if(x == "76"){
 /****************************/
 var firebaseRef = firebase.database().ref().child("messageDb");
 var didPost;
-var maxPosts = 5;
+var maxPosts = 8;
 var serverTime;
 /* Retrieve Server Time */
 // Problem: Might be Client Time, Servertime is recommended.
@@ -206,6 +209,30 @@ function custom(time, name) {
 	}
 	
 }
+
+
+
+function online(){
+	
+	
+	
+	custom(serverTime, chatUser);
+	
+
+function custom(time, name) {
+	var newPostKey = firebase.database().ref().child('messageDb').push().key;
+	refreshServerTime();
+	firebase.database().ref('messageDb/' + serverTime).set({
+		postKey: newPostKey,
+		priority: 0 - Date.now(),
+		username: name,
+		message: name + " is online"
+	});
+	
+	}
+	
+}
+
 
 
 
@@ -321,7 +348,7 @@ function showAll() {
 }
 
 function hideAll() {
-	maxPosts -= maxPosts;
+	maxPosts -= maxPosts+1;
 	loadChat();
 
 }
