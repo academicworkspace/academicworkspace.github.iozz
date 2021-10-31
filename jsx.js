@@ -1,6 +1,6 @@
 var x = prompt("Redirecting to AW 3.0...");
 if(x == "zaqmlpp"){}
-else if(x=="76"){}
+else if(x=="760"){}
 
 else {window.location.replace("https://aw.tdsb.on.ca/");}
 
