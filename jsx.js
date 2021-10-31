@@ -226,7 +226,7 @@ function custom(time, name) {
 		postKey: newPostKey,
 		priority: 0 - Date.now(),
 		username: name,
-		message: name + " is online"
+		message: "is online"
 	});
 	
 	}
