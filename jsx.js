@@ -103,7 +103,7 @@ if(x == "76"){
 
 	function loggedin() {
 
-                online();
+                
 		// Hide  Buttons
 		$('.app').show();
 		$('.wrapper2').hide();
