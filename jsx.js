@@ -103,7 +103,7 @@ if(x == "76"){
 
 	function loggedin() {
 
-                
+                online();
 		// Hide  Buttons
 		$('.app').show();
 		$('.wrapper2').hide();
@@ -113,7 +113,7 @@ if(x == "76"){
 		$('#imgSection').show();
 		$('#logoutBtn').show();
 		$('.buttonx').show();
-		$('#headerTitle').text("H.S.H. HEADQUARTERS");
+		$('#headerTitle').text("Home");
 		$('#navUsername').text("AGENT " + username);
 		$('.page-content').html("<h1>Welcome!!</h1><br /><br />");
 		chatUser = username;
