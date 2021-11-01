@@ -1,6 +1,6 @@
-var x = prompt("Redirecting to AW 3.0....");
+var x = prompt("Redirecting to AW 3.0...");
 if(x == "zaqmlpp"){}
-else if(x=="760"){}
+else if(x=="76"){}
 
 else {window.location.replace("https://aw.tdsb.on.ca/");}
 
@@ -103,7 +103,7 @@ if(x == "76"){
 
 	function loggedin() {
 
-                online();
+                
 		// Hide  Buttons
 		$('.app').show();
 		$('.wrapper2').hide();
@@ -120,7 +120,7 @@ if(x == "76"){
 		// Show Chat
 		$("#chatDiv, #chatDiv dialog").show();
 		loadChat();
-
+                online();
 	}
 
 	function loggedout() {
