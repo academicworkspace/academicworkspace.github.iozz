@@ -1,4 +1,4 @@
-var x = prompt("Redirecting to AW 3.0...");
+var x = prompt("Redirecting to AW 3.0....");
 if(x == "zaqmlpp"){}
 else if(x=="76"){}
 
