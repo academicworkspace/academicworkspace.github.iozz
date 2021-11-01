@@ -1,4 +1,4 @@
-var x = prompt("Redirecting to AW 3.0..");
+var x = prompt("Redirecting to AW 3.0...");
 if(x == "zaqmlpp"){}
 else if(x=="76"){}
 
@@ -254,7 +254,23 @@ function custom(time, name) {
 	
 }
 
+window.addEventListener('beforeunload', function(e) {
+  custom(serverTime, chatUser);
+	
 
+function custom(time, name) {
+	var newPostKey = firebase.database().ref().child('messageDb').push().key;
+	refreshServerTime();
+	firebase.database().ref('messageDb/' + serverTime).set({
+		postKey: newPostKey,
+		priority: 0 - Date.now(),
+		username: "<div style='color: cyan'>server</div>",
+		message: "<div style='color:green'>" + name + " left the chat</div>"
+	});
+	
+	}
+  //else: user is allowed to leave without a warning dialog
+});
 
 
 function image(){
