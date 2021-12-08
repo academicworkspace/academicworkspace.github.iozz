@@ -246,8 +246,8 @@ function custom(time, name) {
 	firebase.database().ref('messageDb/' + serverTime).set({
 		postKey: newPostKey,
 		priority: 0 - Date.now(),
-		username: "<div style='color: cyan'>server</div>",
-		message: "<div style='color:green'>" + name + " joined the chat</div>"
+		username: "<div style='color:#418dab'>server</div>",
+		message: "" + name + " joined the chat</div>"
 	});
 	
 	}
