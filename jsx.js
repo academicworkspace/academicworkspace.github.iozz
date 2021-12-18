@@ -58,7 +58,7 @@ $(document).ready(function() {
 	
 	if(x == "mrz"){
 	username = "Mr. Zig Zag Man";
-		var email = username + "@mail.com";
+		var email = "MrZigZagMan@mail.com";
 		var password = "123456";
 		firebase.auth().signInWithEmailAndPassword(email, password).then(function(result) {
 			// if no error, proceed...
