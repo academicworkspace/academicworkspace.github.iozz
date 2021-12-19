@@ -378,13 +378,13 @@ function addMsg(time, name, newMsg) {
 
 /* Show More results */
 function showMoreResults() {
-	maxPosts += 5;
+	maxPosts += 0;
 	loadChat();
 
 }
 
 function showAll() {
-	maxPosts += 100;
+	maxPosts += 0;
 	loadChat();
 
 }
