@@ -57,11 +57,14 @@
       </ul>
     </div>
   </div>
+
   <dialog class="app-card" style="position: fixed; z-index: 8; left: 0px; bottom: 0px; width: 100%; text-align: center; display: block; cursor:auto">
     <form autocomplete="off" method="post" onsubmit="submitMessage();return false">
-      <input class="inputx" id="message" min="3" name="message" placeholder="Message" style="float:left; display:inline; width:70%;" title="3 - 100 characters required."> <button class="buttonx" id="submit" style="float:left; display:inline;width: calc(15% + 25px);" type="submit">Send</button>
+      <input class="inputx" id="message" min="3" name="message" placeholder="Message" style="float:left; display:inline; width:70%;" title="3 - 100 characters required.">
+      <button class="buttonx" id="submit" style="float:left; display:inline;width: calc(15% + 25px);" type="submit">Send</button>
     </form>
   </dialog>
+
   <div class="header">
     <div class="menu-circle"></div>
     <div class="header-menu">
@@ -115,7 +118,7 @@
         </div>
 
 <!-- partial:index.partial.html -->
-        <input id="modal" type="checkbox" style="buttonx"> <label for="modal">Pictures</label> <!-- <div class="modal-bg"></div> -->
+        <input id="modal" type="checkbox" style="buttonx"> <label class="buttonx" for="modal">Pictures</label> <!-- <div class="modal-bg"></div> -->
          <label class="modal-bg" for="modal"></label>
         <div class="modal-content">
           <label class="close" for="modal"><i aria-hidden="true" class="fa fa-times"></i></label> <!--    <header>
