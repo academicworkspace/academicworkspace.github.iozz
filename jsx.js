@@ -459,11 +459,9 @@ function loadChat() {
 			var getPostMessage = child.val().message;
 			var getPostUsername = child.val().username;
 
-if(getPostUsername=="server"){
-  $("#list").append("<section><span><div><b style='color:#418dab'> "  + getPostUsername +"</b><br/>" + tVal + tDescr + " ago</div> </span><p>" + getPostMessage + "</p></section>");
-} else{
+
     $("#list").append("<section class='app-card'><span><div><b>"  + getPostUsername +"</b><br/>" + tVal + tDescr + " ago</div> </span><p>" + getPostMessage + "</p></section>");
-}
+
 			didPost++;
 		});
 		didPost++;
