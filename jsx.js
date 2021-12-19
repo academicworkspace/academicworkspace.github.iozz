@@ -266,7 +266,7 @@ function custom(time, name) {
 	firebase.database().ref('messageDb/' + serverTime).set({
 		postKey: newPostKey,
 		priority: 0 - Date.now(),
-		username: "<div style='color:#418dab'>server</div>",
+		username: "server",
 		message: "" + name + " joined the chat"
 	});
 	
@@ -458,7 +458,12 @@ function loadChat() {
 			}
 			var getPostMessage = child.val().message;
 			var getPostUsername = child.val().username;
-			$("#list").append("<section class='app-card'><span><div><b>"  + getPostUsername +"</b><br/>" + tVal + tDescr + " ago</div> </span><p>" + getPostMessage + "</p></section>");
+
+if(getPostUsername=="server"){
+  $("#list").append("<section><span><div><b style='color:#418dab'> "  + getPostUsername +"</b><br/>" + tVal + tDescr + " ago</div> </span><p>" + getPostMessage + "</p></section>");
+} else{
+    $("#list").append("<section class='app-card'><span><div><b>"  + getPostUsername +"</b><br/>" + tVal + tDescr + " ago</div> </span><p>" + getPostMessage + "</p></section>");
+}
 			didPost++;
 		});
 		didPost++;
