@@ -128,7 +128,8 @@ body.light-mode:before {
 
 .app {
   background-color: var(--theme-bg-color);
-  
+  top:0;
+left: 0;
 
   height: 100vh;
   display: flex;
