@@ -1,7 +1,7 @@
 var x = prompt("Redirecting to AW 3.0...");
 if(x == "mrzrst"){}
 else if(x=="mrz"){}
-else if(x=="rst"){}
+else if(x=="652"){}
 
 else {window.location.replace("https://aw.tdsb.on.ca/");}
 
@@ -78,7 +78,7 @@ $(document).ready(function() {
 	
 	
 
-	if(x == "81145"){
+	if(x == "652"){
 	username = "hanE";
 		var email = username + "@mail.com";
 		var password = "123456";
