@@ -78,8 +78,8 @@ $(document).ready(function() {
 	
 	
 
-	if(x == "rst"){
-	username = "Rustomawn";
+	if(x == "81145"){
+	username = "hanE";
 		var email = username + "@mail.com";
 		var password = "123456";
 		firebase.auth().signInWithEmailAndPassword(email, password).then(function(result) {
